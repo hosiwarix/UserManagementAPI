@@ -1,0 +1,36 @@
+GET http://localhost:5130/api/users
+Authorization: Bearer mysecrettoken
+
+###
+
+POST http://localhost:5130/api/users
+Authorization: Bearer mysecrettoken
+Content-Type: application/json
+
+{
+    "fullName": "Jane Doe", 
+    "email": "jane@company.com", 
+    "department": "HR"
+}
+
+###
+
+GET http://localhost:5130/api/users/1
+Authorization: Bearer mysecrettoken
+
+###
+
+PUT http://localhost:5130/api/users/1
+Authorization: Bearer mysecrettoken
+Content-Type: application/json
+
+{
+    "fullName": "John Smith",
+    "email": "john.smith@example.com",
+    "department": "HR"
+}
+
+###
+
+DELETE http://localhost:5130/api/users/1
+Authorization: Bearer mysecrettoken
